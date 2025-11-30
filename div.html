@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0">
+
+    <!-- START: Copy this div to your website -->
+    <div id="profile-component-wrapper"
+        class="bg-[#F3F0FF] min-h-screen w-full flex items-center justify-center p-4 sm:p-8 font-['Inter']">
+
+        <!-- Main Content Container -->
+        <div class="max-w-6xl w-full flex flex-col lg:flex-row gap-6 items-stretch">
+
+            <!-- Left Card: Profile -->
+            <div
+                class="bg-white rounded-[2.5rem] p-4 shadow-lg hover-scale fade-in w-full lg:w-[400px] flex flex-col shrink-0">
+                <div class="w-full aspect-[4/5] rounded-[2rem] overflow-hidden mb-4 relative bg-gray-100">
+                    <img src="profile.png" alt="Xojiakbar Tulqunov" class="w-full h-full object-cover">
+                </div>
+                <div class="px-2 pb-2">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Xojiakbar Tulqunov</h2>
+                    <div class="flex gap-3 text-2xl">
+                        <a href="#" class="text-gray-900 hover:text-gray-700 transition-colors"><i
+                                class="fab fa-github"></i></a>
+                        <a href="#" class="text-[#0077B5] hover:opacity-80 transition-opacity"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-[#24A1DE] hover:opacity-80 transition-opacity"><i
+                                class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Card: Details -->
+            <div class="bg-white rounded-[2.5rem] p-8 shadow-lg hover-scale fade-in flex-1 flex flex-col justify-between relative overflow-hidden"
+                style="transition-delay: 100ms;">
+
+                <div class="flex flex-col lg:flex-row gap-8 h-full">
+                    <!-- Text Content -->
+                    <div class="flex-1 z-10">
+                        <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">CEO • Data Scientist •
+                            Agricultural Advisor</h1>
+
+                        <div class="space-y-4 text-gray-700 font-medium leading-relaxed mb-8">
+                            <p>Combines AI expertise with field-level agricultural knowledge to design high-impact,
+                                farmer-centric solutions.</p>
+                            <p>Has won the 1st place in Tech for Ecology Hackathon organized by UNICEF and School21.</p>
+                        </div>
+
+                        <div class="mt-auto">
+                            <h3 class="text-gray-800 font-semibold mb-3">Skills & Stacks:</h3>
+                            <div class="flex flex-wrap gap-3">
+                                <!-- Row 1 -->
+                                <span
+                                    class="px-4 py-2 rounded-full bg-gray-100 border border-gray-200 text-green-500 font-medium text-sm hover:bg-green-50 transition-colors cursor-default">Computer
+                                    Vision</span>
+                                <span
+                                    class="px-4 py-2 rounded-full bg-gray-100 border border-gray-200 text-green-500 font-medium text-sm hover:bg-green-50 transition-colors cursor-default">ML</span>
+                                <span
+                                    class="px-4 py-2 rounded-full bg-gray-100 border border-gray-200 text-green-500 font-medium text-sm hover:bg-green-50 transition-colors cursor-default">Geospatial</span>
+
+                                <!-- Row 2 -->
+                                <span
+                                    class="px-4 py-2 rounded-full bg-gray-100 border border-gray-200 text-green-500 font-medium text-sm hover:bg-green-50 transition-colors cursor-default">OpenCV</span>
+                                <span
+                                    class="px-4 py-2 rounded-full bg-gray-100 border border-gray-200 text-green-500 font-medium text-sm hover:bg-green-50 transition-colors cursor-default">TensorFlow</span>
+                                <span
+                                    class="px-4 py-2 rounded-full bg-gray-100 border border-gray-200 text-green-500 font-medium text-sm hover:bg-green-50 transition-colors cursor-default">QGIS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Logo Image Area -->
+                    <div class="flex-1 flex items-center justify-center lg:justify-end relative">
+                        <div class="w-64 h-64 sm:w-80 sm:h-80 relative flex items-center justify-center">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-orange-100/20 to-yellow-100/20 rounded-[3rem] transform rotate-6">
+                            </div>
+                            <img src="tf_logo.png" alt="TensorFlow Logo"
+                                class="w-full h-full object-contain drop-shadow-2xl transform hover:rotate-[-5deg] transition-transform duration-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const elements = document.querySelectorAll('.fade-in');
+                elements.forEach((el, index) => {
+                    setTimeout(() => {
+                        el.classList.add('visible');
+                    }, index * 200); // Staggered animation
+                });
+            });
+        </script>
+    </div>
+    <!-- END: Copy this div -->
+
+</body>
+
+</html>
