@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%); /* move left by half, the width of one set */
+        }
+      }
+
+      .animate-marquee {
+        display: flex;
+        width: max-content;
+        animation: marquee 40s linear infinite;
+      }
+
+    </style>
+    
+  </head>
+    <body>
+      <section class="w-full h-[1700px] bg-[url('images/hero_bg.jpg')] bg-cover bg-center flex flex-col items-center">
+        <div class="max-w-[calc(100%-128px)] h-[60px] fixed z-[9999] top-2 bg-black/9.5 backdrop-blur-md border-t-[2px] border-b-[1.5px] border-white/30 flex flex-row items-center justify-between rounded-[50px] mt-[32px] px-4">
+            <div class="w-[120px] h-[50px] rounded-[50px] text-[18px] bg-green-500 ml-[32px] items-center justify-center">Logo here</div> 
+              <div class="gap-[32px] flex flex-row items-center mx-[200px]">             
+                  <a href="#" class="text-black/80 text-[18px] hover:text-green-500">Hero</a>
+                  <a href="#" class="text-black/80 text-[18px] hover:text-green-500">Problems</a>
+                  <a href="#" class="text-black/80 text-[18px] hover:text-green-500">Solutions</a>
+                  <a href="#" class="text-black/80 text-[18px] hover:text-green-500">How it works</a>
+                  <a href="#" class="text-black/80 text-[18px] hover:text-green-500">|</a>
+                  <a href="#" class="text-black/80 text-[18px] hover:text-green-500">Our Team</a>
+              </div>
+            <button class="w-[120px] h-[50px] rounded-[50px] text-[20px] bg-green/90 backdrop-blur-md border border-white/30 mr-[32px] hover:-translate-y-0.5 hover:shadow-md hover:bg-green-500 transition-all duration-200">Get app</button>
+          </div>
+
+
+        <div class="flex flex-col items-center mt-[150px]">
+          <h1 class="text-white/90 text-[64px] bg-white/10 backdrop-blur-md border border-white/30 rounded-[25px] font-bold text-center leading-[72px] max-w-[1080px] p-[10px]">Unum — Your pocket agronomist <br>
+            powered by Soil Intelligence</h1>
+          <p class="text-white/90 text-[20px] bg-white/10 backdrop-blur-md border border-white/30 rounded-[25px] text-center mt-[24px] max-w-[800px] p-[10px]">AI, satellites and soil science that tell you <br>
+what to plant, when to water and how to protect your yield.</p>
+            <button class="w-[160px] h-[60px] rounded-[50px] text-[15px] text-white bg-black/30 backdrop-blur-md border-t-[2px] border-b-[1.5px] border-white/30 border border-[2px] mt-[10px] hover:-translate-y-0.5 hover:shadow-md hover:bg-green-500 hover:text-black/80 transition-all duration-200">Download the app</button>
+
+        </div>
+        <div class="flex flex-row align-center justify-center items-center gap-[50px]">
+            <div class="w-[410px] h-[380px] bg-white/20 backdrop-blur-md border border-white/30 rounded-[20px] mt-[100px] flex flex-col items-center "><img class="bg-no-repeat bg-center pt-[80px]" src="images/chart_1.png" alt="">
+            </div>
+            <div class="w-[725px] h-[380px] bg-white/20 backdrop-blur-md border border-white/30 rounded-[20px] mt-[100px] flex flex-col items-center bg-[url('images/cahrt_2.svg')] bg-no-repeat bg-center">
+            </div>
+
+        </div>
+        </section>
+        <section class="w-full h-[577px] bg-[url('images/soil_bg.png')] flex flex-col items-center justify-center ">
+            <div class="max-w-[calc(100%-120px)] flex flex-row items-center justify-between gap-[300px]">  
+                <div class="">
+                    <div class="flex flex-col items-start ">
+                        <div class="text-[68px] text-white">
+                            <h1>Business at risk. <br>It is time to act.</h1>
+                        </div>
+                        <div class="flex flex-row gap-[70px]">
+                            <div class="flex flex-col items-start gap-[10px] ">
+                                <div class="w-[102px] h-[102px] rounded-[100%] flex border-[7px] border-white/20 bg-transparent items-center justify-center align-center"><img src="images/corn.png" class="w-[24px] h-[34px]"> </div>
+                                <h1 class="text-[48px] text-white">+50%</h1>
+                                <p class="text-[18px] text-white">of global Growth Domestic <br>Product depends on soil health</p>
+                            </div>
+                            <div class="flex flex-col items-start gap-[10px] ">
+                                <div class="w-[102px] h-[102px] rounded-[100%] flex border-[7px] border-white/20 bg-transparent items-center justify-center align-center"><img src="images/corn2.png" class="w-[34px] h-[34px]"> </div>
+                                <h1 class="text-[48px] text-white">+60%</h1>
+                                <p class="text-[18px] text-white">of cultivated soils are degraded <br>or very degrated</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-end gap-[40px]">
+                    <div class="w-[414px] h-[126px] bg-white/1 backdrop-blur-md border border-white/30 rounded-[20px] flex flex-col items-center justify-center p-[20px] mr-[150px]">
+                        <img src="images/img_1.png" alt="">
+                    </div>
+                    <div class="w-[414px] h-[126px] bg-white/1 backdrop-blur-md border border-white/30 rounded-[20px] flex flex-col items-center justify-center p-[20px]">
+                       <img src="images/img_2.png" alt="">
+                    </div>
+                    <div class="w-[414px] h-[126px] bg-white/1 backdrop-blur-md border border-white/30 rounded-[20px] flex flex-col items-center justify-center mr-[90px]">
+                       <img src="images/image_3.svg" alt="">
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
+        <section class="bg-white w-full flex flex-col items-center pt-[50px]">
+          <h1 class="text-[20px] text-red-600">Problems</h1>
+          <div class="flex flex-row items-center justify-between mt-[70px] relative gap-[50px]">
+            
+            
+            <div class="sticky top-20 self-start flex flex-col gap-[30px] pt-[50px]">
+              <h1 class="text-[38px] text-black">
+                Agriculture remains one of the<br>least digitized industries.
+              </h1> 
+              <p class="text-[20px]">Even experienced farmers still rely on intuition—not <br> actionable data.<br>
+                Farmers in Uzbekistan (and similar markets) struggle with</p>
+                <button class="w-[466px] h-[57px] bg-green-700 gap-[120px]  text-white text-[18px] rounded-[50px] flex  items-center align-center justify-center">Farmers in Uzbekistan strugle with <img src="images/Icon.png" alt=""> </button>
+            </div>
+            
+            <div class="max-w-[calc(100%-128px)] flex flex-col items-center justify-between mt-[70px] gap-[30px]">
+              <div class="flex flex-row gap-[30px]">
+                <div class="flex flex-col">
+                  <div class="w-[315px] h-[315px] bg-[url('images/prob1.png')]"></div>
+                  <div>
+                    <h1 class="text-[24px] "> Unpredictable harvests</h1>
+                    <p class="text-[18px] text-black/70">One year onion is profitable → next <br>year oversupply kills prices.</p>
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <div class="w-[315px] h-[315px] bg-[url('images/img_2.jpg')]"></div>
+                  <div>
+                    <h1 class="text-[24px] "> No structured decision-making</h1>
+                    <p class="text-[18px] text-black/70">Farmers rely on intuition, not data.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-row gap-[30px]">
+                <div class="flex flex-col">
+                  <div class="w-[315px] h-[315px] bg-[url('images/prob4.png')]"></div>
+                  <div>
+                    <h1 class="text-[24px] "> No easy access to soil knowledge</h1>
+                    <p class="text-[18px] text-black/70">Most farmers don’t know pH/NPK<br>balance of their land.</p>
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <div class="w-[315px] h-[315px] bg-[url('images/prob3.png')]"></div>
+                  <div>
+                    <h1 class="text-[24px] "> Weather unpredictability</h1>
+                    <p class="text-[18px] text-black/70">Rain shifts, frost episodes, heat  <br>waves destroy yield.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-row gap-[30px]">
+                <div class="flex flex-col">
+                  <div class="w-[315px] h-[315px] bg-[url('images/prob5.png')]"></div>
+                  <div>
+                    <h1 class="text-[24px] ">No digital pest diagnosis</h1>
+                    <p class="text-[18px] text-black/70">Agronomists are expensive or<br> unavailable, vision-based tools don’t<br> exist locally </p>
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <div class="w-[315px] h-[315px] bg-[url('images/prob6.png')]"></div>
+                  <div>
+                    <h1 class="text-[24px] ">Market volatility</h1>
+                    <p class="text-[18px] text-black/70">Prices crash without warning.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 class=" text-black text-[37px] flex align-center justify-center items-center mt-[160px]">“Unum gave us insights into our soil that we couldn't get anywhere else. For any<br> farmer looking to optimize their yield and protect their land, this is the future.”</h1>
+          </div>
+          <div class="flex flex-row gap-[50px]">
+            <div class="flex flex-col w-[377px] h-[245px] bg-[linear-gradient(135deg,#a7f3d0,#93c5fd)] bg-white shadow-xl shadow-blue-900/20 rounded-[20px] p-[20px] mt-[30px]">
+              <div class=" text-[40px] items-start flex felx-row">18 <h1 class="text-black pl-[10px] pt-[25px] text-[18px]">%</h1></div>
+              <div class="items-start text-[18px]">average increase in yield when<br> early-stage crop stress is detected <br>and corrected </div>
+            </div>
+            <div class="flex flex-col w-[377px] h-[245px] bg-white shadow-xl shadow-blue-900/20 bg-[linear-gradient(135deg,#c3f7e3,#b7d7ff)] rounded-[20px] p-[20px] mt-[30px]">
+              <div class=" text-[40px] items-start flex felx-row">27 <h1 class="text-black pl-[10px] pt-[25px] text-[18px]">%</h1></div>
+              <div class="items-start text-[18px]">reduction in fertilizer waste <br> when nutrients are applied based on soil-<br>specific recommendations</div>
+            </div>
+            <div class="flex flex-col w-[377px] h-[245px] bg-white shadow-xl shadow-blue-900/20 bg-[linear-gradient(135deg,#95ecc5,#78b8ff)] rounded-[20px] p-[20px] mt-[30px]">
+              <div class=" text-[40px] items-start flex felx-row">31 <h1 class="text-black pl-[10px] pt-[25px] text-[18px]">%</h1></div>
+              <div class="items-start text-[18px]">faster identification of pest <br>outbreaks using AI-powered image<br> analysis compared to manual<br> scouting</div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center mt-[80px] mb-[100px]">
+            <h1 class="text-green-800 text-[20px]">SOLUTIONS</h1>
+            <h1 class="text-black text-[48px]">AI & Analytics & Soil Intelligence </h1>
+            <div class="py-20 bg-slate-50">
+             
+            <div class="max-w-6xl mx-auto px-6">
+        
+              <!-- Section Header -->
+              <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold tracking-wide uppercase mb-4">
+                  Our Technology
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                  Precision Farming, Simplified.
+                </h2>
+                <p class="text-slate-600 text-lg">
+                  We combine satellite data, local soil sensors, and AI to give you clarity on what's happening above and below the ground.
+                </p>
+              </div>
+            
+              <!-- Cards Grid -->
+              <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                     
+                <!-- Card 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+                
+                  <!-- 3D Placeholder -->
+                  <div class="h-80 bg-slate-900 relative">
+                    <div class="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-slate-900 to-slate-800 relative overflow-hidden group">
+                      <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px] perspective-[1000px] transform-style-preserve-3d opacity-20"></div>
+                    
+                      <!-- Bars -->
+                      <div class="relative w-48 h-32 flex items-end justify-between px-4 z-10">
+                        <div class="w-6 bg-gradient-to-t from-blue-600 to-cyan-400 rounded-t-sm shadow-[0_0_15px_rgba(56,189,248,0.5)]" style="height:40%"></div>
+                        <div class="w-6 bg-gradient-to-t from-blue-600 to-cyan-400 rounded-t-sm shadow-[0_0_15px_rgba(56,189,248,0.5)]" style="height:65%"></div>
+                        <div class="w-6 bg-gradient-to-t from-blue-600 to-cyan-400 rounded-t-sm shadow-[0_0_15px_rgba(56,189,248,0.5)]" style="height:45%"></div>
+                        <div class="w-6 bg-gradient-to-t from-blue-600 to-cyan-400 rounded-t-sm shadow-[0_0_15px_rgba(56,189,248,0.5)]" style="height:80%"></div>
+                        <div class="w-6 bg-gradient-to-t from-blue-600 to-cyan-400 rounded-t-sm shadow-[0_0_15px_rgba(56,189,248,0.5)]" style="height:55%"></div>
+                        <div class="w-6 bg-gradient-to-t from-blue-600 to-cyan-400 rounded-t-sm shadow-[0_0_15px_rgba(56,189,248,0.5)]" style="height:95%"></div>
+                      
+                        <svg class="absolute inset-0 w-full h-full">
+                          <path d="M10 90 C 40 80, 80 100, 180 10"
+                            stroke="#A78BFA"
+                            stroke-width="3"
+                            fill="none"
+                            stroke-linecap="round" />
+                        </svg>
+                      
+                        <div class="absolute top-0 right-0 bg-white/10 backdrop-blur-md text-white text-[10px] px-2 py-1 rounded border border-white/20">
+                          Yield +24%
+                        </div>
+                      </div>
+                    
+                      <p class="absolute bottom-4 text-[10px] text-slate-400 font-mono tracking-widest uppercase">
+                        Processing Yield Data...
+                      </p>
+                    </div>
+                  
+                    <!-- Floating Badge -->
+                    <div class="absolute top-4 right-4 w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center shadow-lg">
+                      <span class="text-white font-bold">AI</span>
+                    </div>
+                  </div>
+                
+                  <!-- Content -->
+                  <div class="p-8 flex-1 flex flex-col">
+                    <div class="mb-6">
+                      <h3 class="text-2xl font-bold text-slate-900 mb-2">AI & Analytics</h3>
+                      <p class="text-slate-500 text-sm leading-relaxed">
+                        Turn uncertainty into strategy. Our models analyze historical patterns to predict your harvest yield and market timing.
+                      </p>
+                    </div>
+                  
+                    <div class="space-y-4 mt-auto">
+                      <div class="flex items-start">
+                        <div class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center">
+                          ✔
+                        </div>
+                        <span class="ml-3 text-sm font-medium text-slate-700">Precision Yield Forecasting</span>
+                      </div>
+                      <div class="flex items-start">
+                        <div class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center">
+                          ✔
+                        </div>
+                        <span class="ml-3 text-sm font-medium text-slate-700">Smart Crop Rotation Suggestions</span>
+                      </div>
+                      <div class="flex items-start">
+                        <div class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center">
+                          ✔
+                        </div>
+                        <span class="ml-3 text-sm font-medium text-slate-700">Market Volatility Alerts</span>
+                      </div>
+                      <div class="flex items-start">
+                        <div class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center">
+                          ✔
+                        </div>
+                        <span class="ml-3 text-sm font-medium text-slate-700">Weekly ROI & Financial Reports</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Card 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+                
+                  <!-- 3D Placeholder -->
+                  <div class="h-80 bg-slate-900 relative">
+                  
+                    <div class="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-slate-900 to-slate-800 relative overflow-hidden group">
+                    
+                      <!-- Background Grid -->
+                      <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px] opacity-20"></div>
+                    
+                      <!-- Floating Soil Layers -->
+                      <div class="relative z-10 flex flex-col items-center">
+                      
+                        <div class="w-48 h-10 bg-emerald-500/80 rounded-lg shadow-lg mb-2 transition-transform duration-700 group-hover:-translate-y-4 flex items-center justify-center text-[18px] text-white font-bold border border-emerald-400/50 backdrop-blur-sm">
+                          Nitrogen (N)
+                        </div>
+                      
+                        <div class="w-48 h-10 bg-amber-600/80 rounded-lg shadow-lg mb-2 transition-transform duration-700 group-hover:-translate-y-2 flex items-center justify-center text-[18px] text-white font-bold border border-amber-400/50 backdrop-blur-sm">
+                          Phosphorus (P)
+                        </div>
+                      
+                        <div class="w-48 h-10 bg-blue-600/80 rounded-lg shadow-lg transition-transform duration-700 flex items-center justify-center text-[18px] text-white font-bold border border-blue-400/50 backdrop-blur-sm">
+                          Moisture Lvl
+                        </div>
+                      
+                        <!-- Scanning Ring -->
+                        <div class="absolute top-2/1 left-1/2 -translate-x-2/1 -translate-y-2/1 w-48 h-12 border-2 border-white/60 rounded-full animate-ping opacity-80"></div>
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-12 border-2 border-white/60 rounded-full animate-ping opacity-80"></div>
+                      </div>
+                    
+                      <p class="absolute bottom-4 text-[10px] text-slate-400 font-mono tracking-widest uppercase">
+                        Scanning Root Zone...
+                      </p>
+                    </div>
+                  
+                    <!-- Floating Badge -->
+                    <div class="absolute top-4 right-4 w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center shadow-lg">
+                      <span class="text-white font-bold">Si</span>
+                    </div>
+                  </div>
+                
+                  <!-- Content -->
+                  <div class="p-8 flex-1 flex flex-col">
+                    <div class="mb-6">
+                      <h3 class="text-2xl font-bold text-slate-900 mb-2">Soil Intelligence</h3>
+                      <p class="text-slate-500 text-sm leading-relaxed">
+                        See the invisible. We combine satellite imagery with on-site data to provide a complete chemical breakdown of your land.
+                      </p>
+                    </div>
+                  
+                    <div class="space-y-4 mt-auto">
+                      <div class="flex items-start">
+                        <div class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center">✔</div>
+                        <span class="ml-3 text-sm font-medium text-slate-700">NPK Nutrient Balancing</span>
+                      </div>
+                      <div class="flex items-start">
+                        <div class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center">✔</div>
+                        <span class="ml-3 text-sm font-medium text-slate-700">Smart Irrigation Scheduling</span>
+                      </div>
+                      <div class="flex items-start">
+                        <div class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center">✔</div>
+                        <span class="ml-3 text-sm font-medium text-slate-700">Instant AI Pest Diagnosis</span>
+                      </div>
+                      <div class="flex items-start">
+                        <div class="w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center">✔</div>
+                        <span class="ml-3 text-sm font-medium text-slate-700">QR-Based Lab Results</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+          <div class="flex flex-col align-center items-center justify-center]">
+            <h1 class="text-orange-700 text-[20px]">SOLUTIONS</h1>
+            <h1 class="text-[48px]">Planting guides & knowledge library</h1>
+            <p class="text-[20px] text-center mt-[20px]">A structured, crop-specific knowledge base that delivers best planting dates, soil preparation methods, irrigation cycles, and nutrient <br> plans. Curated with agronomists and powered by field data, it gives farmers evidence-based instructions tailored to local conditions.</p>
+            <div class="overflow-hidden w-full mt-12 relative h-[360px] flex items-center">
+              <div id="carousel" class="flex gap-6 absolute top-0 left-0">
+              
+              
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/tomato.png" 
+                  alt="Cotton" 
+                  class="absolute top-5 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-top-left group-hover:-translate-y-4 group-hover:-rotate-[15deg]">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Tomato</h1>
+                </div>
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/cotton.png" 
+                  alt="Cotton" 
+                  class="absolute -top-20 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-top-left group-hover:-translate-y-4 group-hover:-rotate-[15deg]">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Cotton</h1>
+                </div>
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/paper.png" 
+                  alt="Cotton" 
+                  class="absolute -top-5 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-bottom-left group-hover:-translate-y-4 group-hover:-rotate-[15deg]">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Paper</h1>
+                </div>
+
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/wheat.png" 
+                  alt="Cotton" 
+                  class="absolute -top-5 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-bottom-left group-hover:-translate-y-4 group-hover:-rotate-[15deg]">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Wheat</h1>
+                </div>
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/cucumber.png" 
+                  alt="Cotton" 
+                  class="absolute -top-10 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-bottom-left group-hover:-translate-y-4 group-hover:-rotate-[15deg] group-hover:scale-120">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Cucumber</h1>
+                </div>
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/melon.png" 
+                  alt="Cotton" 
+                  class="absolute top-10 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-bottom-left group-hover:-translate-x-2 group-hover:-rotate-[15deg] group-hover:scale-150">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Melon</h1>
+                </div>
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/beetroot.png" 
+                  alt="Cotton" 
+                  class="absolute -top-20 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-bottom-left group-hover:-translate-y-2 group-hover:-rotate-[15deg] group-hover:scale-110">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Beetroot</h1>
+                </div>
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/watermelon1.png" 
+                  alt="Cotton" 
+                  class="absolute -top-5 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-bottom-left group-hover:-translate-y-4 group-hover:-rotate-[15deg] group-hover:scale-150">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Watermelon</h1>
+                </div>
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/tomato.png" 
+                  alt="Cotton" 
+                  class="absolute top-5 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-top-right group-hover:-translate-y-4 group-hover:-rotate-[15deg]">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Tomato</h1>
+                </div>
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/cotton.png" 
+                  alt="Cotton" 
+                  class="absolute -top-20 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-top-left group-hover:-translate-y-4 group-hover:-rotate-[15deg]">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Cotton</h1>
+                </div>
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/paper.png" 
+                  alt="Cotton" 
+                  class="absolute -top-5 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-bottom-left group-hover:-translate-y-4 group-hover:-rotate-[15deg]">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Paper</h1>
+                </div>
+
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/wheat.png" 
+                  alt="Cotton" 
+                  class="absolute -top-5 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-bottom-right group-hover:-translate-y-4 group-hover:-rotate-[15deg]">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Wheat</h1>
+                </div>
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/cucumber.png" 
+                  alt="Cotton" 
+                  class="absolute -top-10 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-bottom-left group-hover:-translate-y-2 group-hover:-rotate-[15deg] group-hover:scale-120">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Cucumber</h1>
+                </div>
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/melon.png" 
+                  alt="Cotton" 
+                  class="absolute top-10 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-bottom-left group-hover:-translate-y-4 group-hover:-rotate-[15deg] group-hover:scale-150">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Melon</h1>
+                </div>
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/beetroot.png" 
+                  alt="Cotton" 
+                  class="absolute -top-20 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-top-left group-hover:-translate-y-2 group-hover:-rotate-[15deg] group-hover:scale-110">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Beetroot</h1>
+                </div>
+                <div class="w-[248px] h-[320px] shadow-xl bg-white/10 backdrop-blur-md border border-white/30 rounded-[20px] mt-[50px] flex flex-col justify-end overflow-visible relative group mx-[20px]">
+                <!-- Image -->
+                <img 
+                  src="images/watermelon1.png" 
+                  alt="Cotton" 
+                  class="absolute -top-5 left-1/2 -translate-x-1/2 object-contain transition-transform duration-500 origin-bottom-right group-hover:-translate-x-2 group-hover:-rotate-[15deg] group-hover:scale-150">
+                <h1 class="text-black text-lg font-bold mb-4 ml-[20px] z-10 relative">Watermelon</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col align-center items-center justify-center]">
+            <h1 class="text-orange-700 text-[20px] mt-[160px] ">SOLUTIONS</h1>
+            <h1 class="text-[48px]">Weather & Environment</h1>
+            <p class="text-[18px] text-center mt-[30px]">Unum’s AI models combine satellite data, localized sensors, and climate records to deliver precise weather <br>intelligence for every field. Plan planting windows, adjust irrigation, and protect crops from unexpected conditions.</p>
+            <div>
+
+            </div>
+          </div>
+        </section>
+      </body>
+      <script>
+        const carousel = document.getElementById('carousel');
+        let possition = 0;
+        const speed = 1; // pixels per frame
+
+        function animateCarousel() {
+          // Move carousel to left
+          carousel.style.left = (parseFloat(carousel.style.left || 0) - speed) + 'px';
+        
+          // Get width of first card including gap
+          const firstCard = carousel.children[0];
+          const cardWidth = firstCard.offsetWidth + 24; // 24px = gap
+        
+          // If the first card is completely out of view, move it to the end
+          if (Math.abs(parseFloat(carousel.style.left || 0)) >= cardWidth) {
+            carousel.appendChild(firstCard);
+            carousel.style.left = (parseFloat(carousel.style.left || 0) + cardWidth) + 'px';
+          }
+        
+          requestAnimationFrame(animateCarousel);
+        }
+
+        animateCarousel();
+
+      </script>
+    </head>
+    
+
+</html>
